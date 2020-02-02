@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&display=swap");
+html,
+body {
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  color: hsl(0, 0%, 30%);
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.highlighted {
+  background-color: #f9ecc7;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  word-break: break-all;
+  padding-right: 5rem;
+  @media (min-width: 576px) {
+    padding-right: 0;
+  }
+  &:before,
+  &.copied:after {
+    content: "COPY";
+    position: absolute;
+    bottom: 0.9rem;
+    right: 1rem;
+    color: #b44f13;
+    font-weight: 900;
+    display: block;
+    background-color: #fff;
+    padding: 0 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: none;
+  }
+  &.copied {
+    &:after {
+      content: "COPIED";
+      color: #13b445;
+      display: block;
+    }
+  }
+  &:hover {
+    background-color: peachpuff;
+    &:before {
+      display: block;
+    }
+  }
+}
+
+.result-content,
+.result-heading {
+  &.true {
+    display: none;
+  }
+}
+
+.result-text {
+  display: none;
+  font-weight: 900;
+  color: #000;
+  font-size: 1.2rem;
+  text-align: center;
+  &.true {
+    display: block;
+  }
+}
+
+.purple {
+  color: #2d13b4;
+}
+
+.brown {
+  color: #b44f13;
+}
+
+.pink {
+  color: #9c4848;
+}
