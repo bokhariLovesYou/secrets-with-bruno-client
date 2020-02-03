@@ -36,7 +36,9 @@ class privateSecret extends Component {
         <p>
           <strong>
             Therefore, please keep a note of that.{" "}
-            <span aria-labelledby="heart">❤️️</span>
+            <span aria-label="heart" role="img">
+              ❤️️
+            </span>
           </strong>
         </p>
       </div>

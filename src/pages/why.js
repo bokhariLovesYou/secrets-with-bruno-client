@@ -4,7 +4,11 @@ export class why extends Component {
   render() {
     return (
       <div>
-        <h1>😂</h1>
+        <h1>
+          <span aria-label="Laughing" role="img">
+            😂
+          </span>
+        </h1>
         <p>
           <strong>It's a nice tool, but more like so that - </strong>
         </p>

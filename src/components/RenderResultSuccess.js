@@ -61,7 +61,9 @@ export class RenderResultSuccess extends Component {
             <strong>
               This link will expire as soon as it's viewed and will not be
               accessible again. Please keep a note of that.{" "}
-              <span aria-labelledby="heart">❤️️</span>
+              <span aria-label="heart" role="img">
+                ❤️️
+              </span>
             </strong>
           </p>
           <Button onClick={this.showSecret}>View My Secret</Button>

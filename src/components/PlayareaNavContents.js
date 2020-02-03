@@ -121,7 +121,11 @@ export class PlayareaNavContents extends Component {
                   </Link>
                 </li>
                 <li>
-                  <a target="_blank" href="https://designwithbruno.com/">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://designwithbruno.com/"
+                  >
                     Explore <span className="purple">Design with Bruno</span>
                   </a>
                 </li>
